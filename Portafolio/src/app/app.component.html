@@ -1,26 +1,18 @@
+<header>
+  <ul>
+    <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre mi</a></li>
+    <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Proyectos</a></li>
+    <li id="logo"><a href="#">VR</a></li>
+    <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Crear proyecto</a></li>
+    <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a></li>
+  </ul>
+</header>
 
-<div>
-  <h1>
-    Bienvenido al {{title}}
-  </h1>
-  <p>Vamos a aprender Angular con Victor Robles</p>
-
-  <nav>
-    <a [routerLink]="['/']">Home</a>
-    &nbsp;
-    <a [routerLink]="['/zapatillas']">zapatillas</a>
-    &nbsp;
-    <a [routerLink]="['/cursos']">cursos</a>
-    &nbsp;
-    <a [routerLink]="['/videojuego']">videojuego</a>
-    &nbsp;
-    <a [routerLink]="['/contacto']" [routerLink]="['active']">contacto</a>
-  </nav>
-
-  <!--<videojuego></videojuego>
-  <zapatillas></zapatillas>
-  <cursos></cursos>-->
+<section id="content">
   <router-outlet></router-outlet>
- 
+</section>
 
-</div>
+<footer>
+  Master en JavaScript de victorroblesweb.es &copy;
+</footer>
+

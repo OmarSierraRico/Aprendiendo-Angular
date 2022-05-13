@@ -1,25 +1,24 @@
-//Importar modulos del router de angular
-import { ModuleWithProviders } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-//Importar componentes
-import { HomeComponent } from "./home/home.component";
-import { zapatillasComponent } from "./zapatillas/zapatillas.component";
-import { videojuegoComponent } from "./videojuego/videojuego.component";
-import { CursosComponent } from "./cursos/cursos.component";
-import { ContactoComponent } from "./contacto/contacto.component";
+import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { CreateComponent } from './components/create/create.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ErrorComponent } from './components/error/error.component';
+import { DetailComponent } from './components/detail/detail.component';
+import { EditComponent } from './components/edit/edit.component';
 
-
-//Array de rutas 
 const appRoutes: Routes = [
-    { path: '', component: HomeComponent},
-    { path: 'zapatillas', component: zapatillasComponent},
-    { path: 'videojuego', component: videojuegoComponent},
-    { path: 'cursos', component: CursosComponent},
-    { path: 'contacto', component: ContactoComponent },
-    { path: '**', component: HomeComponent}
+	{path: '', component: AboutComponent},
+	{path: 'sobre-mi', component: AboutComponent},
+	{path: 'proyectos', component: ProjectsComponent},
+	{path: 'crear-proyecto', component: CreateComponent},
+	{path: 'contacto', component: ContactComponent},
+	{path: 'proyecto/:id', component: DetailComponent},
+	{path: 'editar-proyecto/:id', component: EditComponent},
+	{path: '**', component: ErrorComponent}
 ];
 
-//Exportar el modulo del router
 export const appRoutingProviders: any[] = [];
-export const routing: ModuleWithProviders<any> = RouterModule.forRoot(appRoutes);
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
