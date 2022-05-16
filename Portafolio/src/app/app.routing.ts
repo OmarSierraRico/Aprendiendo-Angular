@@ -1,6 +1,8 @@
+//Modulos del router
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+//Se importa los componentes "app.module.ts"
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { CreateComponent } from './components/create/create.component';
@@ -9,6 +11,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { EditComponent } from './components/edit/edit.component';
 
+//Se define mis rutas
 const appRoutes: Routes = [
 	{path: '', component: AboutComponent},
 	{path: 'sobre-mi', component: AboutComponent},
@@ -19,6 +22,6 @@ const appRoutes: Routes = [
 	{path: 'editar-proyecto/:id', component: EditComponent},
 	{path: '**', component: ErrorComponent}
 ];
-
+//Se exporta las rutas
 export const appRoutingProviders: any[] = [];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

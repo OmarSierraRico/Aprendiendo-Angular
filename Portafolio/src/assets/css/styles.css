@@ -1,4 +1,4 @@
-/* Importar fuentes custom*/
+/* Importar fuentes externas en CSS "finger,titiliun,yanone*/
 @font-face{
 	font-family: "yanone";
 	src: url("fonts/yanone.ttf");
@@ -9,7 +9,7 @@
 	src: url("fonts/finger.ttf");
 }
 
-/*Generales*/
+/*Maquetacion general*/
 
 *{
 	margin: 0px;
@@ -19,7 +19,7 @@
 body{
 	font-family: "yanone", Arial, Helvetica;
 	font-size: 20px;
-	background: url("../img/pattern.png");
+	background: url("../img/Imgfd.jpg");
 	background-attachment: fixed;
 }
 
@@ -28,13 +28,13 @@ body{
 	clear:both;
 }
 
-/*Barra de navegacion / cabecera*/
+/*Barra de navegacion Heder*/
 
 header{
 	display: block;
 	width: 100%;
 	height: 90px;
-	background: rgba(53, 103, 164, 0.8);
+	background: rgb(80 203 102 / 80%);
 	position: fixed;
 	text-transform: uppercase;
 }
@@ -82,7 +82,7 @@ header a:hover,
 
 #logo a:hover{
 	background: transparent;
-	color: black;
+	color: blue;
 	transform:scale(1.50,1.50);
 }
 
@@ -91,12 +91,12 @@ header a:hover,
 #content{
 	min-height: 600px;
 	height: auto;
-	width: 75%;
+	width: 80%;
 	margin: 0px auto;
 	box-shadow: 0px 0px 40px black;
 	border-left:1px solid #b7b7b7;
 	border-right:1px solid #b7b7b7;
-	background: rgba(255, 255, 255, 0.7);
+	background: rgba(224, 230, 231, 0.963);
 	padding-top: 120px;
 }
 
@@ -111,16 +111,16 @@ footer{
 
 /*Sobre mi*/
 #title{
-	width: 70%;
+	width: 90%;
 	margin: 0px auto;
-	text-align: center;
+	/*text-align: center;*/
 	margin-top: 20px;
 	margin-bottom: 70px;
 }
 
 #title h1{
 	font-family: "finger";
-	font-size: 60px;
+	font-size: 50px;
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 5px;
 }
@@ -128,6 +128,7 @@ footer{
 #title h2{
 	font-size: 25px;
 	color: gray;
+	text-align: center;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
@@ -143,6 +144,7 @@ article.about{
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 5px;
 	margin-bottom: 5px;
+	
 }
 
 .about p{

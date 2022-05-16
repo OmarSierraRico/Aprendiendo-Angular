@@ -5,15 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
+//Aca se edita lo que se vera en el Front
 export class AboutComponent implements OnInit {
   public title: string;
   public subtitle: string;
   public web: string;
 
   constructor(){
-  	this.title = "Víctor Robles";
-  	this.subtitle = "Desarrollador web y Formador";
-  	this.web = "victorroblesweb.es";
+  	this.title = "Giovanni Sierra Rico";
+  	this.subtitle = "Desarrollador Fronted";
+  	this.web = "sierrarico83@gmail.com";
   }
 
   ngOnInit() {

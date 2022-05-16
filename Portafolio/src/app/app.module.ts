@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-import { routing, appRoutingProviders } from './app.routing';
+import { HttpClientModule } from '@angular/common/http';//Se trae de la API
+import { FormsModule } from '@angular/forms';//Se trae de la API
+import { routing, appRoutingProviders } from './app.routing';//Se importan de "app.routing.ts"
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
@@ -33,12 +33,12 @@ import { ResaltadoDirective } from './resaltado.directive';
   ],
   imports: [
     BrowserModule,
-    routing,
+    routing, //Se carga aca el routin de arriba
     HttpClientModule,
     FormsModule
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders //se carga el servicio tambien de arriba 
   ],
   bootstrap: [AppComponent]
 })
