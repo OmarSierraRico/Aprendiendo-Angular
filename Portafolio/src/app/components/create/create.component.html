@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="message failed" *ngIf="status == 'failed'">
-		El proyecto NO SE HA PODIDO CREAR
+		NO SE HA PODIDO CREAR PROYECTO
 	</div>
 
 	<form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
@@ -14,7 +14,7 @@
 			<label for="name">Nombre</label>
 			<input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required />
 			<span class="form_error" *ngIf="name.touched && !name.valid">
-				El nombre es obligatorio
+				NOMBRE OBLIGATORIO
 			</span>
 		</p>
 
@@ -22,7 +22,7 @@
 			<label for="description">Descripción</label>
 			<textarea name="description" #description="ngModel" [(ngModel)]="project.description" required></textarea>
 			<span class="form_error" *ngIf="description.touched && !description.valid">
-				La descripción es obligatoria
+				DESCRIPCION OBLIGATORIA
 			</span>
 		</p>
 
@@ -30,7 +30,7 @@
 			<label for="category">Categoría</label>
 			<input type="text" name="category" #category="ngModel" [(ngModel)]="project.category" required />
 			<span class="form_error" *ngIf="category.touched && !category.valid">
-				La categoría es obligatoria
+				CATEGORIA OBLIGATORIA
 			</span>
 		</p>
 
@@ -43,7 +43,7 @@
 			<label for="langs">Lenguajes utilizados</label>
 			<input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.langs" required />
 			<span class="form_error" *ngIf="langs.touched && !langs.valid">
-				Los lenguajes son obligatorios
+				LENGUAJES OBLIGATORIOS
 			</span>
 		</p>
 

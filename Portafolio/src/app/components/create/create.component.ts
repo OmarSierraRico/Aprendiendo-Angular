@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from '../../models/project';
 import { ProjectService } from '../../services/project.service';
 import { UploadService } from '../../services/upload.service';
-import { Global } from '../../services/global';
+import { Global } from 'src/app/services/global'; 
 
 @Component({
   selector: 'app-create',
